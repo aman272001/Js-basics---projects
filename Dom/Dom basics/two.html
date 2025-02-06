@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Advanced</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <div class="parent">
+        <div class="day">Monday</div>
+        <div class="day">Tuesday</div>
+        <div class="day">Wednesday</div>
+        <div class="day">Thrusday</div>
+        <div class="day">Friday</div>
+    </div>
+</body>
+<script>
+    // const parent = document.querySelector('.parent')
+    // const aman = document.querySelector('.day')
+    // aman.style.color = "blue"
+    // // console.log(aman);
+    // console.log("Nodes: ", parent.childNodes);
+    // const aman2 = parent.childNodes
+    // aman2.forEach(element => {
+    //     console.log(element);
+        
+    // });
+
+    const div = document.createElement('div')
+    console.log(div);
+    div.className = "Aman"
+    div.id = "yo"
+    div.style.background = "Green"
+    div.style.padding = "12px"
+    const aman = document.createTextNode("Hello my name is aman")
+    div.appendChild(aman)
+
+    document.body.appendChild(div)
+    
+
+
+
+</script>
+</html>

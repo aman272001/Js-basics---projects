@@ -1,0 +1,15 @@
+.parent{
+    text-align: center;
+    
+}
+#results{
+    /* background-color: white; */
+    color: whitesmoke;
+    font-size: larger;
+    padding: 5px 10px;
+    margin: 5px;
+}
+#range {
+    color: whitesmoke;
+    font-size: larger;
+}

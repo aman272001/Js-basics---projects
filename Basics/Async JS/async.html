@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+    <link rel="stylesheet" href="async.css">
+</head>
+<body>
+    <h1>Aman</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    const titleChange = function(){
+        document.querySelector('h1').innerHTML = "Ki jai ho"
+    }
+    const titleRetrieve = function(){
+        document.querySelector('h1').innerHTML = "Aman"
+    }
+    // settimeout(titleChange,2000)
+    // setTimeout(function(){
+    //     console.log("Title is Changed");    
+    // },2100)
+    const stop1 = setInterval(titleChange,2000)
+    const stop = setInterval(titleRetrieve,4000)
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearInterval(stop1)
+        clearInterval(stop)
+    })
+
+</script>
+</html>

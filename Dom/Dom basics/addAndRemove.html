@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM|Add, Edit and Delete</title>
+</head>
+<body>
+        <ul class="object">
+            <li>Mango</li>
+            <li>apple</li>
+            <li>banana</li>
+        </ul>
+
+</body>
+<script>
+function editFunc(addFruits){
+    const aman = document.createElement('li')
+    aman.innerHTML = `${addFruits}`
+    document.querySelector('.object').appendChild(aman)
+    
+}
+editFunc("grapes")
+
+const first = ((addveggies)=>{
+    const aman = document.createElement('li')
+    aman.appendChild(document.createTextNode(addveggies))
+    document.querySelector('.object').appendChild(aman)
+})
+first('yoyo')
+
+// edit
+
+const secondFruit = document.querySelector("li:nth-child(2)")
+const newli = document.createElement("li")
+newli.textContent = "Mojo"
+secondFruit.replaceWith(newli)
+
+// Delete
+
+const lastFruits = document.querySelector('li:last-child')
+lastFruits.remove()
+</script>
+</html>
+

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genshin Impact</title>
+</head>
+<body style="background-color: #414141; color: aliceblue;">
+    <h1>Genshin Impact</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    let set;
+    const aman = function(){
+        console.log("Aman");
+    }
+    const start = function(){
+        set = setInterval(aman,1000)
+    }
+    const stop = function(){
+        clearInterval(set)
+    }
+    
+    document.querySelector('#start').addEventListener('click',start)
+    document.querySelector('#stop').addEventListener('click',stop)
+</script>
+</html>
